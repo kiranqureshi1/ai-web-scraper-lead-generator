@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+
+# Env
+.env
+
+# Data exports
+exports/*
+!exports/.gitkeep
+*.csv
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

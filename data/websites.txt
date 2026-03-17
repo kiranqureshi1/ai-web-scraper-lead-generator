@@ -1,0 +1,4 @@
+# Add one company website per line
+https://openai.com
+https://www.anthropic.com
+https://www.datadoghq.com

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-web-scraper-lead-generator"
+version = "0.1.0"
+description = "Scrape company websites, extract structured leads with AI, store in PostgreSQL, and export CSV."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "beautifulsoup4>=4.12.3",
+  "openai>=1.54.0",
+  "psycopg2-binary>=2.9.9",
+  "python-dotenv>=1.0.1",
+  "requests>=2.32.3",
+  "SQLAlchemy>=2.0.36",
+]
+
+[project.scripts]
+leadgen = "leadgen.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
